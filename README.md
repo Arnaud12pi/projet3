@@ -5,13 +5,14 @@ API qui permet d'intégrer les données d'un fichier .csv dans une databes mysql
 Il est aussi possible de faire des requêtes SELECT simple ,pour intégroger la base et INSERT pour ajouter des lignes dans la bd
 
 repertoires:
+```
 -- /app
 --    /env                        #Repertoire de l'environement virtuel
 --    /requirements.txt           #Fichier requirements
 --    /main.py                    #Fichier main de l'API
 --    /mysql_requete.py           #Fonctions pour manipuler mysql ( requete)
 --    /stack_network_links.csv    #Fichier de donnée telecharger sur ●	https://www.kaggle.com/stackoverflow/stack-overflow-tag-network?select=stack_network_links.csv
- 
+``` 
 
 #Installation de l'API
 
