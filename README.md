@@ -11,12 +11,11 @@ repertoires:
 --    /main.py                    #Fichier main de l'API
 --    /mysql_requete.py           #Fonctions pour manipuler mysql ( requete)
 --    /stack_network_links.csv    #Fichier de donnée telecharger sur ●	https://www.kaggle.com/stackoverflow/stack-overflow-tag-network?select=stack_network_links.csv
+ 
 
-#Image 
+#Installation de l'API
 
-#Utilisation de l'API
-
-1- Telecharger l'image de mysql sur votre machine (docker nécessaire) 
+1- Télècharger l'image de mysql sur votre machine (docker nécessaire) 
 ```
 docker pull mysql
 ```
@@ -28,6 +27,7 @@ docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=azerty -d mysql
 '''
 mkdir app
 '''
+
 4-Créer un environement virtuel dans ce repertoire (virtualenv nécessaire)
 '''
 cd app
@@ -45,7 +45,20 @@ source ./env/bin/activate
 '''
 pip install -r requirements.txt
 '''
-8-Lancer le server uvicorn 
+8-Dans le repertoire racine (/app), lancer le server uvicorn , 
 '''
 uvicorn main:app --reload
 '''
+L'api est maintenant disponible sur le navigateur à l'adresse http://localhost:8000
+
+
+#Utilisation de l'API
+
+Sur l'URL http://localhost:8000 on peut voir 5 endpoint :
+-Status          : Permet de vérifier si l'API est opérationnel
+-Intégration     : Permet d'integrer les données du fichier "stack_network_links.csv" dans la bd mysql 
+-Database        : Permet d'affciher les database presente sur mysql 
+-Requete SELECT  : Permet de faire des requete select simple pour intéroger la bd  
+-Requete INSERT  : Permet de faire des INSERT spour ajouter une ligne dans la bd
+
+
