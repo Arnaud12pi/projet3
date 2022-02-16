@@ -66,7 +66,7 @@ Sur l'URL http://localhost:8000 on peut voir 5 endpoint :
     -select :  source,target          # Colonnes à afficher 
     -FROM   :  stack_network_links    # Table à intéroger
     -where  :  target = ".net"        # condiction pour la recherche 
-![Screenshot](C:\Users\adouspis\Desktop\1.png)
+![Simplon.co](C:\Users\adouspis\Desktop\1.png)
      
 -Requete INSERT  : Permet de faire des INSERT spour ajouter une ligne dans la bd , exemple:
 
