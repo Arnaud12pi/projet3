@@ -38,10 +38,12 @@ python3 -m venv env
 ```
 
 5-copier les fichiers dans ce repertoire (repertoire racine /app ) 
+```
     -main.py
     -mysql_requete.py
     -requirements.txt
     -stack_network_links.csv
+```
 
 6-Activer l'environement virtuel 
 ```
