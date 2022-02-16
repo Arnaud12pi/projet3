@@ -21,34 +21,36 @@ docker pull mysql
 ```
 
 2- lancer un container avec l'image mysql => le mot de passe ici sera "azerty"
+```
 docker run --name mysql -p 3306:3306 -e MYSQL_ROOT_PASSWORD=azerty -d mysql
+```
 
 3-Crée un repertoire pour l'application 
-'''
+```
 mkdir app
-'''
+```
 
 4-Créer un environement virtuel dans ce repertoire (virtualenv nécessaire)
-'''
+```
 cd app
 python3 -m venv env
-'''
+```
 
 5-copier les fichiers dans ce repertoire l'application (repertoire racine ) 
 
 6-Activer l'environement virtuel 
-'''
+```
 source ./env/bin/activate
-'''
+```
 
 7-Dans le repertoire racine (/app) => telecharger les librairies avec le fichier requirements.txt
-'''
+```
 pip install -r requirements.txt
-'''
+```
 8-Dans le repertoire racine (/app), lancer le server uvicorn , 
-'''
+```
 uvicorn main:app --reload
-'''
+```
 L'api est maintenant disponible sur le navigateur à l'adresse http://localhost:8000
 
 
@@ -56,9 +58,18 @@ L'api est maintenant disponible sur le navigateur à l'adresse http://localhost:
 
 Sur l'URL http://localhost:8000 on peut voir 5 endpoint :
 -Status          : Permet de vérifier si l'API est opérationnel
--Intégration     : Permet d'integrer les données du fichier "stack_network_links.csv" dans la bd mysql 
+-Intégration     : Création de la database et integration les données du fichier "stack_network_links.csv" dans la bd mysql 
 -Database        : Permet d'affciher les database presente sur mysql 
--Requete SELECT  : Permet de faire des requete select simple pour intéroger la bd  
--Requete INSERT  : Permet de faire des INSERT spour ajouter une ligne dans la bd
+-Requete SELECT  : Permet de faire des requete select simple pour intéroger la bd , exemple : 
+     -select :  source,target          # Colonnes à afficher 
+     -FROM   :  stack_network_links    # Table à intéroger
+     -where  :  target = ".net"        # condiction pour la recherche 
+     
+-Requete INSERT  : Permet de faire des INSERT spour ajouter une ligne dans la bd , exemple:
+     -val_source  : 
+     -valt_target :
+     -val_value   :
+
+
 
 
