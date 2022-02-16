@@ -11,7 +11,8 @@ repertoires:
 --    /requirements.txt           #Fichier requirements
 --    /main.py                    #Fichier main de l'API
 --    /mysql_requete.py           #Fonctions pour manipuler mysql ( requete)
---    /stack_network_links.csv    #Fichier de donnée telecharger sur ●	https://www.kaggle.com/stackoverflow/stack-overflow-tag-network?select=stack_network_links.csv
+--    /stack_network_links.csv    #Fichier de donnée telecharger sur :	
+                                         #https://www.kaggle.com/stackoverflow/stack-overflow-tag-network?select=stack_network_links.csv
 ``` 
 
 #Installation de l'API
