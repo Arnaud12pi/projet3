@@ -62,14 +62,16 @@ Sur l'URL http://localhost:8000 on peut voir 5 endpoint :
 -Intégration     : Création de la database et integration les données du fichier "stack_network_links.csv" dans la bd mysql 
 -Database        : Permet d'affciher les database presente sur mysql 
 -Requete SELECT  : Permet de faire des requete select simple pour intéroger la bd , exemple : 
-     -select :  source,target          # Colonnes à afficher 
-     -FROM   :  stack_network_links    # Table à intéroger
-     -where  :  target = ".net"        # condiction pour la recherche 
+
+    -select :  source,target          # Colonnes à afficher 
+    -FROM   :  stack_network_links    # Table à intéroger
+    -where  :  target = ".net"        # condiction pour la recherche 
      
 -Requete INSERT  : Permet de faire des INSERT spour ajouter une ligne dans la bd , exemple:
-     -val_source  : 
-     -valt_target :
-     -val_value   :
+
+    -val_source  : "test1"            # Valeur à attribuer à la colonne "source" (string)
+    -valt_target : "test2"            # Valeur à attribuer à la colonne "target" (string)
+    -val_value   : 5                  # Valeur à attribuer à la colonne "value"  (int)
 ```
 
 
