@@ -1,4 +1,4 @@
-# ==========  Instanciez un objet de la classe Flask==========
+
 from cgitb import reset
 from fastapi import FastAPI
 from  mysql_requete import *
@@ -149,5 +149,5 @@ def rq_insert(val_source =None , val_target = None ,val_value = None):
 # ========== rendre exécutable. ==========
 
 #La méthode .run permet  de lancer l'application sur un serveur de développement local , à chaque lancement du fichier.py
-if __name__ == '__main__':
-    uvicorn.run(app, host="0.0.0.0" , port=8001)
+#if __name__ == '__main__':
+#    uvicorn.run(app, host="0.0.0.0" , port=8001)
