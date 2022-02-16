@@ -70,13 +70,13 @@ Sur l'URL http://localhost:8000 il y a 5 url disponible (screen/general.png)  :
 -Intégration     : Création de la database et integration les données du fichier
                  "stack_network_links.csv" dans la bd mysql                       (screen/integration.png)
 -Database        : Permet d'affciher les database presente sur mysql              (screen/database.png)
--Requete SELECT  : Permet de faire des requetes SELECT simple , exemple:          (screen/select.png et screen/select2.png) : 
+-Requete SELECT  : Permet de faire des requetes SELECT simple , exemple:          (screen/select.png et screen/select2.png)
 
 --select :  source,target          # Colonnes à afficher 
 --FROM   :  stack_network_links    # Table à intéroger
 --where  :  target = ".net"        # condiction pour la recherche 
      
--Requete INSERT  : Permet de faire des INSERT sur la bd , exemple:                (screen/inser.png et screen/insert2.png):
+-Requete INSERT  : Permet de faire des INSERT sur la bd , exemple:                (screen/inser.png et screen/insert2.png)
 
 --val_source  : "test1"            # Valeur à attribuer à la colonne "source" (string)
 --valt_target : "test2"            # Valeur à attribuer à la colonne "target" (string)
